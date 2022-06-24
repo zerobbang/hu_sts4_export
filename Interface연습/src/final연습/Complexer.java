@@ -9,27 +9,25 @@ public class Complexer implements Complexable{
 
 	@Override
 	public void print() {
-		// TODO Auto-generated method 
-		System.out.println("종이에 출력 시작 : "+--ink);
+		ink -= 2;
+		System.out.println("출력 시작 : "+ink);
 		
 	}
 
 	@Override
 	public void scan() {
-		// TODO Auto-generated method stub
-		System.out.println("이미지를 스캔합니다.");
+		System.out.println("이미지를 스캔");
 	}
 
 	@Override
 	public void send(String tel) {
-		// TODO Auto-generated method stub
-		System.out.println("이미지를 스캔합니다.");
+		System.out.println("팩스 이미지 전송 > " + tel);
 	}
 
 	@Override
 	public void receive(String tel) {
-		// TODO Auto-generated method stub
-		System.out.println("이미지를 스캔합니다.");
+
+		System.out.println("팩스 이미지 받기 > "+tel);
 	}
 
 }
